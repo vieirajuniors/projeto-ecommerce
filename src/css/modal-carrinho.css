@@ -6,7 +6,6 @@
     height: 100%;
     overflow: hidden;
     display: none;
-    display: block;
 }
 
 .modal.is-open {
@@ -118,4 +117,78 @@ td .btn-remover {
 
 .finalizar-compra:hover {
     background-color: var(--cor-primaria-hover);
+}
+
+@media(min-width: 769px) {
+    .modal {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: var(--cor-neutra-escura);
+        background-color: rgba(00, 00, 00, 0.8);
+        display: none;
+    }
+
+    .modal .container {
+        background-color: var(--cor-cinza-escura);
+        max-width: 720px;
+        height: auto;
+        padding: 1.5rem;
+        margin: 0 auto;
+        border-radius: 14px;
+    }
+
+     .modal .container th {
+        background-color: var(--cor-neutra-escura);
+    }
+
+    table {
+        border-collapse: collapse;
+    }
+
+    tbody td {
+        border: 2px solid var(--cor-neutra-escura);
+        padding: 0.5rem;
+    }
+
+    .th-produto,
+    .th-total,
+    .td-produto,
+    .td-preco-total {
+        display: table-cell;
+    }
+
+    .td-preco-total {
+        white-space: nowrap;
+        font-size: 1rem;
+        font-weight: 300;
+        color: var(--cor-neutra-clara);
+    }
+
+    .td-quantidade {
+        text-align: center;
+    }
+
+    td img {
+        width: 48px;
+        height: auto;
+        border-radius: 4px;
+    }
+
+    .container-preco {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+
+    }
+
+    .total-carrinho {
+        text-align: right;
+    }
+
+    .finalizar-compra {
+        width: 300px;
+        border-radius: 0.2rem;
+        border: none;
+    }
 }
