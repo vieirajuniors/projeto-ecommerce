@@ -20,6 +20,10 @@ main .produtos ul {
 main .produtos .produto {
     max-width: 368px;
     border-radius: 14px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: var(--cor-cinza-escura);
 }
 
 main .produtos img {
@@ -48,6 +52,8 @@ main .informacoes {
     flex-direction: column;
     gap: 0.5rem;
     padding: 0 1.5rem 1.5rem;
+    border-bottom-left-radius: 14px;
+    border-bottom-right-radius: 14px;
 }
 
 main .informacoes span {
@@ -71,7 +77,8 @@ main .informacoes .adicionar-ao-carrinho {
     border: none;
     border-radius: 8px;
     color: var(--cor-neutra-clara);
-    font-size: 1rem;
+    font-size: 1.2rem;
+    font-weight: 400;
     letter-spacing: 0.1rem;
     padding: 1rem;
     cursor: pointer;
